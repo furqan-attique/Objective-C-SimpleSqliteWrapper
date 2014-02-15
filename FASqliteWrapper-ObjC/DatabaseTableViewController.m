@@ -36,6 +36,13 @@ NSString *const DATATABLEVIEWCELL_IDENTIFIER = @"DatabaseTableViewCell";
     // Do any additional setup after loading the view from its nib.
     
     self.records_arr = [[NSMutableArray alloc]init];
+    
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 7)
+    {
+        self.data_tableview.contentInset = UIEdgeInsetsZero;    //UIEdgeInsetsMake(-20, 0, 0, 0);
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
     [self.data_tableview registerNib:[UINib nibWithNibName:@"DatabaseTableViewCell" bundle:nil] forCellReuseIdentifier:DATATABLEVIEWCELL_IDENTIFIER];
     
     FASQLiteDB *fasqlitedb = [FASQLiteDB sharedInstance];
@@ -81,6 +88,21 @@ NSString *const DATATABLEVIEWCELL_IDENTIFIER = @"DatabaseTableViewCell";
     
     return cell;
     
+}
+
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.records_arr.count > 0)
+    {
+        AddNewViewController *addnewVC = [[AddNewViewController alloc]initWithNibName:@"AddNewViewController" bundle:nil];
+        addnewVC.isEditMode = YES;
+        NSArray *record = [self.records_arr objectAtIndex:indexPath.row];
+        addnewVC.name  = [record objectAtIndex:0];
+        addnewVC.email = [record objectAtIndex:1];
+        [self presentViewController:addnewVC animated:YES completion:nil];
+    
+    }
+
 }
 
 

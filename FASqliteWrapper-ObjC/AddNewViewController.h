@@ -12,9 +12,15 @@
 
 @property(nonatomic,weak)IBOutlet UITextField *name_text;
 @property(nonatomic,weak)IBOutlet UITextField *email_text;
+@property(nonatomic,weak)IBOutlet UIButton *addnew_btn;
 
+
+@property (nonatomic,strong) NSString *name;
+@property (nonatomic,strong) NSString *email;
+@property BOOL isEditMode;
 
 -(IBAction)addingNewRecord:(id)sender;
 
+-(IBAction)back:(id)sender;
 
 @end

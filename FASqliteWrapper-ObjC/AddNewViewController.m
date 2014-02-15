@@ -28,15 +28,34 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    if (self.isEditMode)
+    {
+        self.name_text.text = self.name;
+        self.email_text.text = self.email;
+        [self.addnew_btn setTitle:@"Update" forState:UIControlStateNormal];
+    }
 }
+
+
+-(IBAction)back:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 -(IBAction)addingNewRecord:(id)sender
 {
     if (self.name_text.text.length > 0 && self.email_text.text.length > 0)
     {
+        
     
         FASQLiteDB *fasqlitedb = [FASQLiteDB sharedInstance];
-        NSString *querystring = [NSString stringWithFormat:@"INSERT INTO userdata (name,email) VALUES ('%@','%@')",self.name_text.text,self.email_text.text];
+        NSString *querystring;
+        if (self.isEditMode)
+            querystring = [NSString stringWithFormat:@"UPDATE userdata SET name='%@',email='%@' WHERE name='%@' AND email='%@'",self.name_text.text,self.email_text.text,self.name,self.email];
+        else
+            querystring = [NSString stringWithFormat:@"INSERT INTO userdata (name,email) VALUES ('%@','%@')",self.name_text.text,self.email_text.text];
         BOOL isSuccessful = [fasqlitedb executeQuery:querystring];
         NSLog(@"record added  %i:",isSuccessful);
         

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DatabaseTableViewController : UIViewController <UITableViewDataSource>
+@interface DatabaseTableViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
 @property(nonatomic,weak) IBOutlet UITableView *data_tableview;
 

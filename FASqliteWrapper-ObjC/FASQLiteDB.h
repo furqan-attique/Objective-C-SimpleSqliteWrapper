@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 InnovativeApps. All rights reserved.
 //
 
-
-//Singleton Class for Sqlite Database Managemen
+//SQLiteWrapper
+//Singleton Class for Sqlite Database Management
 ///////////////////////////////////////////////////////////////////
 
 #import <Foundation/Foundation.h>
