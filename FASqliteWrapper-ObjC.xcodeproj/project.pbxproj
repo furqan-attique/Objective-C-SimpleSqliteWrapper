@@ -19,6 +19,16 @@
 		D118BEAC18AE5DB800ABB849 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D118BE9418AE5DB800ABB849 /* UIKit.framework */; };
 		D118BEB418AE5DB800ABB849 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D118BEB218AE5DB800ABB849 /* InfoPlist.strings */; };
 		D118BEB618AE5DB800ABB849 /* FASqliteWrapper_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D118BEB518AE5DB800ABB849 /* FASqliteWrapper_ObjCTests.m */; };
+		D118BEC118AE5E1C00ABB849 /* FASQLiteDB.m in Sources */ = {isa = PBXBuildFile; fileRef = D118BEC018AE5E1C00ABB849 /* FASQLiteDB.m */; };
+		D118BEC518AE60A600ABB849 /* DatabaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D118BEC318AE60A600ABB849 /* DatabaseTableViewController.m */; };
+		D118BEC618AE60A600ABB849 /* DatabaseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D118BEC418AE60A600ABB849 /* DatabaseTableViewController.xib */; };
+		D118BEC918AE64E200ABB849 /* mydatabase1.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D118BEC818AE64E200ABB849 /* mydatabase1.sqlite */; };
+		D118BECB18AE6C4600ABB849 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D118BECA18AE6C4600ABB849 /* libsqlite3.0.dylib */; };
+		D13005C318AF3E7700EED226 /* mydb33.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D13005C218AF3E7700EED226 /* mydb33.sqlite */; };
+		D1A9113318AF52520004CA17 /* AddNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A9113118AF52520004CA17 /* AddNewViewController.m */; };
+		D1A9113418AF52520004CA17 /* AddNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A9113218AF52520004CA17 /* AddNewViewController.xib */; };
+		D1A9113718AF6CDC0004CA17 /* DatabaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A9113618AF6CDC0004CA17 /* DatabaseTableViewCell.m */; };
+		D1A9113918AF6CF90004CA17 /* DatabaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A9113818AF6CF90004CA17 /* DatabaseTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,21 @@
 		D118BEB118AE5DB800ABB849 /* FASqliteWrapper-ObjCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FASqliteWrapper-ObjCTests-Info.plist"; sourceTree = "<group>"; };
 		D118BEB318AE5DB800ABB849 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D118BEB518AE5DB800ABB849 /* FASqliteWrapper_ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FASqliteWrapper_ObjCTests.m; sourceTree = "<group>"; };
+		D118BEBF18AE5E1C00ABB849 /* FASQLiteDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FASQLiteDB.h; sourceTree = "<group>"; };
+		D118BEC018AE5E1C00ABB849 /* FASQLiteDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FASQLiteDB.m; sourceTree = "<group>"; };
+		D118BEC218AE60A600ABB849 /* DatabaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseTableViewController.h; sourceTree = "<group>"; };
+		D118BEC318AE60A600ABB849 /* DatabaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseTableViewController.m; sourceTree = "<group>"; };
+		D118BEC418AE60A600ABB849 /* DatabaseTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatabaseTableViewController.xib; sourceTree = "<group>"; };
+		D118BEC818AE64E200ABB849 /* mydatabase1.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mydatabase1.sqlite; sourceTree = "<group>"; };
+		D118BECA18AE6C4600ABB849 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		D13005C218AF3E7700EED226 /* mydb33.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mydb33.sqlite; sourceTree = "<group>"; };
+		D13F14DD18AF39A400883A02 /* mydb2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mydb2; sourceTree = "<group>"; };
+		D1A9113018AF52520004CA17 /* AddNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewViewController.h; sourceTree = "<group>"; };
+		D1A9113118AF52520004CA17 /* AddNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewViewController.m; sourceTree = "<group>"; };
+		D1A9113218AF52520004CA17 /* AddNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewViewController.xib; sourceTree = "<group>"; };
+		D1A9113518AF6CDC0004CA17 /* DatabaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseTableViewCell.h; sourceTree = "<group>"; };
+		D1A9113618AF6CDC0004CA17 /* DatabaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseTableViewCell.m; sourceTree = "<group>"; };
+		D1A9113818AF6CF90004CA17 /* DatabaseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatabaseTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D118BECB18AE6C4600ABB849 /* libsqlite3.0.dylib in Frameworks */,
 				D118BE9318AE5DB800ABB849 /* CoreGraphics.framework in Frameworks */,
 				D118BE9518AE5DB800ABB849 /* UIKit.framework in Frameworks */,
 				D118BE9118AE5DB800ABB849 /* Foundation.framework in Frameworks */,
@@ -96,6 +122,7 @@
 		D118BE8F18AE5DB800ABB849 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D118BECA18AE6C4600ABB849 /* libsqlite3.0.dylib */,
 				D118BE9018AE5DB800ABB849 /* Foundation.framework */,
 				D118BE9218AE5DB800ABB849 /* CoreGraphics.framework */,
 				D118BE9418AE5DB800ABB849 /* UIKit.framework */,
@@ -109,6 +136,18 @@
 			children = (
 				D118BE9F18AE5DB800ABB849 /* FAAppDelegate.h */,
 				D118BEA018AE5DB800ABB849 /* FAAppDelegate.m */,
+				D118BEC218AE60A600ABB849 /* DatabaseTableViewController.h */,
+				D118BEC318AE60A600ABB849 /* DatabaseTableViewController.m */,
+				D118BEC418AE60A600ABB849 /* DatabaseTableViewController.xib */,
+				D1A9113518AF6CDC0004CA17 /* DatabaseTableViewCell.h */,
+				D1A9113618AF6CDC0004CA17 /* DatabaseTableViewCell.m */,
+				D1A9113818AF6CF90004CA17 /* DatabaseTableViewCell.xib */,
+				D1A9113018AF52520004CA17 /* AddNewViewController.h */,
+				D1A9113118AF52520004CA17 /* AddNewViewController.m */,
+				D1A9113218AF52520004CA17 /* AddNewViewController.xib */,
+				D118BEBF18AE5E1C00ABB849 /* FASQLiteDB.h */,
+				D118BEC018AE5E1C00ABB849 /* FASQLiteDB.m */,
+				D118BEC718AE618D00ABB849 /* Resources */,
 				D118BEA218AE5DB800ABB849 /* Images.xcassets */,
 				D118BE9718AE5DB800ABB849 /* Supporting Files */,
 			);
@@ -142,6 +181,16 @@
 				D118BEB218AE5DB800ABB849 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D118BEC718AE618D00ABB849 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D13005C218AF3E7700EED226 /* mydb33.sqlite */,
+				D13F14DD18AF39A400883A02 /* mydb2 */,
+				D118BEC818AE64E200ABB849 /* mydatabase1.sqlite */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +270,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D118BE9B18AE5DB800ABB849 /* InfoPlist.strings in Resources */,
+				D1A9113918AF6CF90004CA17 /* DatabaseTableViewCell.xib in Resources */,
 				D118BEA318AE5DB800ABB849 /* Images.xcassets in Resources */,
+				D13005C318AF3E7700EED226 /* mydb33.sqlite in Resources */,
+				D118BEC918AE64E200ABB849 /* mydatabase1.sqlite in Resources */,
+				D118BEC618AE60A600ABB849 /* DatabaseTableViewController.xib in Resources */,
+				D1A9113418AF52520004CA17 /* AddNewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A9113718AF6CDC0004CA17 /* DatabaseTableViewCell.m in Sources */,
+				D118BEC518AE60A600ABB849 /* DatabaseTableViewController.m in Sources */,
+				D1A9113318AF52520004CA17 /* AddNewViewController.m in Sources */,
+				D118BEC118AE5E1C00ABB849 /* FASQLiteDB.m in Sources */,
 				D118BE9D18AE5DB800ABB849 /* main.m in Sources */,
 				D118BEA118AE5DB800ABB849 /* FAAppDelegate.m in Sources */,
 			);
@@ -365,6 +423,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FASqliteWrapper-ObjC/FASqliteWrapper-ObjC-Prefix.pch";
 				INFOPLIST_FILE = "FASqliteWrapper-ObjC/FASqliteWrapper-ObjC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -378,6 +437,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FASqliteWrapper-ObjC/FASqliteWrapper-ObjC-Prefix.pch";
 				INFOPLIST_FILE = "FASqliteWrapper-ObjC/FASqliteWrapper-ObjC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -444,6 +504,7 @@
 				D118BEBB18AE5DB800ABB849 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D118BEBC18AE5DB800ABB849 /* Build configuration list for PBXNativeTarget "FASqliteWrapper-ObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +513,7 @@
 				D118BEBE18AE5DB800ABB849 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

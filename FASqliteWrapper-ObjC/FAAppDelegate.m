@@ -7,6 +7,7 @@
 //
 
 #import "FAAppDelegate.h"
+#import "DatabaseTableViewController.h"
 
 @implementation FAAppDelegate
 
@@ -15,6 +16,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    DatabaseTableViewController *databasetableVC = [[DatabaseTableViewController alloc]initWithNibName:@"DatabaseTableViewController" bundle:nil];
+    self.window.rootViewController = databasetableVC;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
