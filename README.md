@@ -7,7 +7,9 @@ Simple Sqlite3 database wrapper class to execute queries using Objective-C metho
 More changes and updates will be added later.
 
 Just import   #import "FASQLiteDB.h"
+
     FASQLiteDB *fasqlitedb = [FASQLiteDB sharedInstance];
+    
     [fasqlitedb setupDatabaseWithDBFile:@"mydb"]; //Sqlite Database File name without extension
 
     //Execute Query : INSERT , UPDATE , DELETE
