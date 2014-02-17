@@ -2,7 +2,7 @@
 //  FASQLiteDB.h
 //  FASqliteWrapper-ObjC
 //
-//  Created by Furqan on 2/14/14.
+//  Created by Furqan  (furqan_isl@hotmail.com)
 //  Copyright (c) 2014 InnovativeApps. All rights reserved.
 //
 
@@ -25,6 +25,11 @@
 -(void)setupDatabaseWithDBFile:(NSString *)sqliteDatabaseFileName;
 -(BOOL)executeQuery:(NSString *)query;
 -(NSArray *)executeSelectQuery:(NSString *)query;
+
+
+
+//closing database
+-(void)closeDatabase;
 
 
 @end

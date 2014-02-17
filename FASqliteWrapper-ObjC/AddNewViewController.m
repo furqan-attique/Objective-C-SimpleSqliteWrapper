@@ -31,9 +31,12 @@
     
     if (self.isEditMode)
     {
-        self.name_text.text = self.name;
-        self.email_text.text = self.email;
-        [self.addnew_btn setTitle:@"Update" forState:UIControlStateNormal];
+        if (self.person)
+        {
+            self.name_text.text = self.person.name;
+            self.email_text.text = self.person.email;
+            [self.addnew_btn setTitle:@"Update" forState:UIControlStateNormal];
+        }
     }
 }
 
@@ -53,7 +56,7 @@
         FASQLiteDB *fasqlitedb = [FASQLiteDB sharedInstance];
         NSString *querystring;
         if (self.isEditMode)
-            querystring = [NSString stringWithFormat:@"UPDATE userdata SET name='%@',email='%@' WHERE name='%@' AND email='%@'",self.name_text.text,self.email_text.text,self.name,self.email];
+            querystring = [NSString stringWithFormat:@"UPDATE userdata SET name='%@',email='%@' WHERE name='%@' AND email='%@'",self.name_text.text,self.email_text.text,self.person.name,self.person.email];
         else
             querystring = [NSString stringWithFormat:@"INSERT INTO userdata (name,email) VALUES ('%@','%@')",self.name_text.text,self.email_text.text];
         BOOL isSuccessful = [fasqlitedb executeQuery:querystring];
